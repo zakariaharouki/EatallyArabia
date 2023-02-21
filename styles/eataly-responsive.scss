@@ -1,0 +1,1537 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+  .location-map {
+    display: flex;
+    align-items: center;
+    .location-map-details {
+      padding-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+  .location-map {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 768px;
+  }
+  .homepage-banner {
+    .content-holder {
+      max-width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    padding: 20px 0px;
+    border-bottom: solid 1px #ededed;
+    .btn {
+      text-align: center;
+    }
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-bottom: 30px;
+    li {
+      text-align: center;
+      &:not(:last-child) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .container {
+    max-width: 100%;
+  }
+  .homepage-banner {
+    background-image: url(../images/homepage-banner-mobile.jpg);
+    background-position: center;
+    height: 400px;
+    .content-holder {
+      max-width: 80%;
+    }
+  }
+  .intro-blocks {
+    padding: 50px 0px;
+    .container {
+      .intro-block {
+        &:not(:last-child) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  .intro-block {
+    .image-holder {
+      display: none;
+    }
+    .text-holder {
+      .image-holder-mobile {
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .contact-us {
+    padding: 50px 0px;
+    .contact-us-container {
+      max-width: 100%;
+      padding: 0px 15px;
+    }
+  }
+  .location-map {
+    height: 350px;
+  }
+  footer {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  .location-block {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 156px;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    .burger-menuicon {
+      display: block;
+      position: absolute;
+      background-image: url(../images/BurgerMenu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 70px;
+      right: 18px;
+      width: 26px;
+      height: 18px;
+    }
+    ul {
+      position: absolute;
+      top: 0px;
+      right: -300px;
+      height: 100vh;
+      width: 260px;
+      background-color: #f8f8f8;
+      padding-top: 110px;
+      .CloseBurgerMenu {
+        content: '';
+        display: block;
+        background-image: url(../images/CloseMenu.png);
+        background-position: center;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+      }
+      li {
+        width: 100%;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 25px 0px 25px 25px;
+        text-align: left !important;
+      }
+    }
+    .logo {
+      padding-top: 42px;
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      img {
+        max-width: 126px;
+      }
+    }
+    .btn {
+      display: flex;
+      width: 100%;
+      border-radius: 0px;
+      a {
+        border-radius: 0px;
+        width: 100%;
+      }
+    }
+  }
+  .ContactUsPage-banner {
+    height: 50vh;
+  }
+  .CookingClasses-banner {
+    height: 50vh;
+  }
+  .PlanPrivateEvents-banner {
+    height: 50vh;
+  }
+  .homepage-banner {
+    height: 80vh !important;
+    .content-holder {
+      top: 130px;
+      bottom: 130px;
+
+      h1 {
+        font-size: 60px !important;
+      }
+      .text {
+        font-size: 18px;
+      }
+    }
+  }
+  .RestaurantPage-banner {
+    height: 55vh !important;
+    background-position: center;
+    .content-holder {
+      top: 130px;
+      bottom: 130px;
+
+      h1 {
+        font-size: 60px !important;
+      }
+      .text {
+        font-size: 15px !important;
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .MarketPage-banner {
+    height: 55vh !important;
+    background-position: center;
+    .content-holder {
+      top: 130px;
+      bottom: 130px;
+
+      h1 {
+        font-size: 55px !important;
+      }
+      .text {
+        font-size: 15px !important;
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .Classesandevents-banner {
+    height: 55vh !important;
+    background-position: center;
+    .content-holder {
+      top: 130px;
+      bottom: 130px;
+
+      h1 {
+        font-size: 55px !important;
+      }
+      .text {
+        font-size: 15px !important;
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .OpenAnimation {
+    right: -300px;
+    -webkit-animation: OpenAnimation 0.25s forwards;
+    -webkit-animation-delay: 0.25s;
+    animation: OpenAnimation 0.25s forwards;
+    animation-delay: 0.25s;
+  }
+
+  @-webkit-keyframes OpenAnimation {
+    100% {
+      right: 0;
+    }
+  }
+
+  @keyframes OpenAnimation {
+    100% {
+      right: 0;
+    }
+  }
+  .highlights {
+    padding: 20px 20px 20px 20px;
+    .blockTitle {
+      display: none;
+    }
+    .listingItem {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .listingImage {
+      width: 100%;
+    }
+    .listingInfos {
+      width: 100%;
+      min-height: 136px;
+      padding: 15px 15px 40px 15px;
+      .btn {
+        display: none;
+      }
+      .listingDate {
+        display: none;
+      }
+      .listingTitle {
+        color: #693835;
+        font-family: 'MrsEavesXLSerifOT';
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+    }
+    .owl-item {
+      max-width: 255px;
+    }
+  }
+  .ourmanifesto {
+    .manifestobrief {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  .aboutus {
+    .eatshoplearn {
+      margin-top: 20px;
+    }
+    .row:first-child {
+      display: flex;
+      flex-direction: column-reverse;
+      .blockTitle {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 38px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .ourmanifesto {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .blockTitle {
+      font-size: 38px !important;
+    }
+    .manifestocarousel {
+      margin-left: 0px !important;
+      margin-bottom: 0px;
+    }
+    .owl-item {
+      max-width: 255px;
+    }
+    .listingTitle {
+      font-size: 26px;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .listingDetails {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 22px;
+      text-align: center;
+    }
+    .listingItemLI {
+      max-width: 255px;
+      margin-bottom: auto !important;
+    }
+    .listingImage {
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+  .joinourteam {
+    padding: 40px 0px 40px 0px;
+    img {
+      max-width: 100%;
+    }
+    .blockTitle {
+      font-size: 38px !important;
+      margin-top: 15px;
+    }
+  }
+  .whatwedosection {
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .blockTitle {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .ImageHolder {
+      height: auto;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .JoinOurTeam-banner {
+    height: 56vh;
+  }
+  .JoinOurTeamSection {
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .form-intro {
+      max-width: 80%;
+    }
+    .blockTitle {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    p {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    .listingHolder {
+      .listingItem {
+        padding: 0px;
+        .listingTitle {
+          font-size: 26px;
+          line-height: 26px;
+        }
+        .listingInfos {
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .HowtoApplySection {
+    padding: 20px;
+    p {
+      margin-bottom: 15px;
+    }
+    .blockTitle {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    .ImageHolder {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .ouropenpositions {
+    padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .blockTitle {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+  .reservetable {
+    h2 {
+      font-size: 38px;
+      max-width: 75%;
+    }
+    height: 372px;
+  }
+  .locationmapsection {
+    .location-map-details {
+      margin-left: 20px;
+      margin-right: auto;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+      h2 {
+        font-size: 38px;
+      }
+    }
+    .col-md-5 {
+      text-align: left;
+    }
+  }
+
+  .location-banner {
+    min-height: 292px;
+  }
+  footer {
+    text-align: center;
+    .rowfirst {
+      margin-bottom: 40px !important;
+    }
+    .footerlogo {
+      margin-bottom: 40px;
+      img {
+        width: 145px;
+      }
+    }
+    .footermenuitems {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin-right: 0px !important;
+        margin-top: 20px;
+        color: #333333;
+        font-family: 'Museo Sans 500';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 19px;
+        text-align: center;
+      }
+    }
+    .eatbythebeach {
+      text-align: center;
+      width: 168px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+    .visiteatalyarabia {
+      text-align: center;
+      padding-right: 0px !important;
+      &::after {
+        top: 30px;
+        right: 50%;
+      }
+    }
+    .rowsecond {
+      margin-bottom: 40px !important;
+    }
+    .rowfourth {
+      .social-media-icons {
+        // padding-left: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px !important;
+      }
+      .developedby {
+        text-align: center;
+      }
+    }
+  }
+  .section2 {
+    .reservetableholder {
+      display: flex;
+      flex-direction: column;
+      .innerleft {
+        width: 100%;
+        height: auto;
+        .listingImage {
+          height: auto;
+        }
+        .listingItemLI {
+          padding: 0;
+        }
+        .restaurantpicscarousel {
+          margin: 0;
+        }
+      }
+      .innerright {
+        width: 100%;
+        text-align: left;
+        height: auto;
+        padding: 15px 15px 15px 15px;
+        h2 {
+          font-size: 28px;
+          letter-spacing: 0;
+          line-height: 28px;
+        }
+        p {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+        .btn {
+          display: flex;
+          flex-direction: column;
+        }
+        .reserevetablelink {
+          width: 197px;
+          margin-bottom: 15px;
+        }
+        .menulink {
+          margin-left: 0px;
+        }
+      }
+    }
+    .typesoffood {
+      margin-bottom: 0px;
+      padding-bottom: 40px;
+      .listingHolder {
+        padding: 0px;
+        margin: 0px;
+        .listingItemLI {
+          .listingTitle {
+            font-size: 22px;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin-bottom: 5px;
+          }
+          .listingInfos {
+            padding: 15px 15px 15px 15px;
+          }
+          .listingDetails {
+            font-size: 13px;
+            letter-spacing: 0;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+  .enjoydiningandwine {
+    margin-bottom: 0px;
+    .listingItem {
+      margin-bottom: 20px;
+    }
+    .listingHolder {
+      .listingItemLI {
+        .listingTitle {
+          font-size: 22px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .eventssection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .listingHolder {
+      padding: 0;
+      margin: 0;
+      .listingItemLI {
+        .listingTitle {
+          font-size: 22px !important;
+          letter-spacing: 0 !important;
+          line-height: 22px !important;
+        }
+        .listingItem {
+          width: 255px;
+          display: flex;
+          flex-direction: column-reverse;
+          height: fit-content;
+          .listingImage {
+            width: 100%;
+          }
+          .listingInfos {
+            width: 100%;
+            padding: 15px 15px 15px 15px !important;
+          }
+          .listingDetails {
+            margin-bottom: 15px !important;
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 38px !important;
+      letter-spacing: 0 !important;
+      line-height: 38px !important;
+    }
+  }
+  .fullwidthsection {
+    margin-bottom: 40px;
+    .listingHolder {
+      .listingItemLI {
+        .listingInfos {
+          top: auto;
+          left: auto;
+          padding: 15px;
+          width: 100%;
+          height: fit-content;
+          position: relative;
+          bottom: auto;
+        }
+        .listingImage {
+          width: 100%;
+          height: auto;
+          display: block;
+          img {
+            width: 100%;
+            height: 255px;
+            display: block;
+          }
+        }
+        .listingTitle {
+          font-size: 26px;
+          letter-spacing: 0;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .section2Market {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .blockTitle {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    .brief {
+      font-size: 14px;
+      max-width: 100%;
+    }
+    .listingItem {
+      .listingInfos {
+        padding: 15px;
+        .listingTitle {
+          font-size: 26px;
+          line-height: 26px;
+        }
+        .listingsubTitle {
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .section2ClassesEvents {
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .listingItem {
+      margin-bottom: 20px;
+      .listingInfos {
+        padding: 15px;
+        .listingTitle {
+          font-size: 26px;
+          letter-spacing: 0;
+          line-height: 26px;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+    .privateevents {
+      margin-top: 0px;
+      .listingHolder {
+        .listingItemLI {
+          .listingItem {
+            box-shadow: none;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+          .listingInfos {
+            top: auto;
+            left: auto;
+            width: 100%;
+            padding: 15px;
+            height: fit-content;
+            position: relative;
+          }
+          .listingImage {
+            width: 100%;
+            img {
+              width: 100%;
+              height: 255px;
+            }
+          }
+          .listingTitle {
+            font-size: 26px;
+            letter-spacing: 0;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+
+  .section2ContactUs {
+    background-position: center;
+    height: auto;
+  }
+  .contactussection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .contactusform {
+      h3 {
+        font-size: 38px;
+        letter-spacing: 0;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .loader {
+    display: none;
+  }
+  .JobApplicationFormsection {
+    h3 {
+      font-size: 38px;
+      letter-spacing: 0;
+      line-height: 38px;
+    }
+    .formActions {
+      justify-content: center;
+    }
+  }
+
+  .section2CookingClasses {
+    padding: 0;
+    padding-top: 20px;
+    .listingItem {
+      .listingDate {
+        padding-left: 22px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+      }
+      .listingtime {
+        padding-left: 22px;
+        &::before {
+          left: -2px;
+        }
+      }
+    }
+  }
+  .section2PlanPrivateEvents {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .blockTitle {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    .eventsoptions {
+      .listingImage {
+        margin-top: 20px;
+      }
+    }
+    .privateeventcarousel {
+      margin-left: 0px;
+    }
+  }
+  .PrivateEventformsection .PrivateEventForm .stackedInput,
+  .PrivateEventformsection .PrivateEventForm ul.stackedInput li {
+    display: contents;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    line-height: 1.5em;
+  }
+  .PrivateEventformsection {
+    .blockTitle {
+      font-size: 38px;
+      line-height: 35px;
+    }
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 156px;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    .burger-menuicon {
+      display: block;
+      position: absolute;
+      background-image: url(../images/BurgerMenu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 70px;
+      right: 18px;
+      width: 26px;
+      height: 18px;
+    }
+    ul {
+      position: absolute;
+      top: 0px;
+      right: -300px;
+      height: 100vh;
+      width: 260px;
+      background-color: #f8f8f8;
+      padding-top: 110px;
+      .CloseBurgerMenu {
+        content: '';
+        display: block;
+        background-image: url(../images/CloseMenu.png);
+        background-position: center;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+      }
+      li {
+        width: 100%;
+        border-bottom: 1px solid #d8d8d8;
+        padding: 25px 0px 25px 25px;
+        text-align: left !important;
+      }
+    }
+    .logo {
+      padding-top: 42px;
+      width: 100%;
+      float: left;
+      text-align: left;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      img {
+        max-width: 126px;
+      }
+    }
+    .btn {
+      display: flex;
+      width: 100%;
+      border-radius: 0px;
+      a {
+        border-radius: 0px;
+        width: 100%;
+      }
+    }
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .OpenAnimation {
+    right: -300px;
+    -webkit-animation: OpenAnimation 0.25s forwards;
+    -webkit-animation-delay: 0.25s;
+    animation: OpenAnimation 0.25s forwards;
+    animation-delay: 0.25s;
+  }
+
+  @-webkit-keyframes OpenAnimation {
+    100% {
+      right: 0;
+    }
+  }
+
+  @keyframes OpenAnimation {
+    100% {
+      right: 0;
+    }
+  }
+  .highlights {
+    padding: 20px 20px 0px 20px;
+    .blockTitle {
+      display: none;
+    }
+    .listingItem {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .listingImage {
+      width: 100%;
+    }
+    .listingInfos {
+      width: 100%;
+      min-height: 136px;
+      padding: 15px 15px 40px 15px;
+      .btn {
+        display: none;
+      }
+      .listingDate {
+        display: none;
+      }
+      .listingTitle {
+        color: #693835;
+        font-family: 'MrsEavesXLSerifOT';
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+    }
+    .owl-item {
+      max-width: 255px;
+    }
+  }
+  .aboutus {
+    .eatshoplearn {
+      margin-top: 20px;
+    }
+    .listingHolder {
+      .col-md-4 {
+        h3 {
+          font-size: 40px;
+          line-height: 40px;
+          &::before {
+            left: -75px;
+            width: 65px;
+          }
+          &::after {
+            right: -75px;
+            width: 65px;
+          }
+        }
+      }
+    }
+    .row:first-child {
+      display: flex;
+      .blockTitle {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 38px;
+      }
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .ourmanifesto {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .blockTitle {
+      font-size: 38px !important;
+    }
+    .manifestobrief {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .manifestocarousel {
+      margin-left: 0px !important;
+      margin-bottom: 0px;
+    }
+    .owl-item {
+      max-width: 255px;
+    }
+    .listingTitle {
+      font-size: 26px;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .listingDetails {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 22px;
+      text-align: center;
+    }
+    .listingItemLI {
+      max-width: 255px;
+      margin-bottom: auto !important;
+    }
+    .listingImage {
+      img {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+  .joinourteam {
+    padding: 40px 0px 40px 0px;
+    img {
+      max-width: 100%;
+    }
+    .blockTitle {
+      font-size: 38px !important;
+      margin-top: 15px;
+    }
+  }
+  .JoinOurTeamSection {
+    padding: 20px;
+  }
+  .HowtoApplySection {
+    padding: 20px;
+  }
+  .ouropenpositions {
+    padding: 20px;
+  }
+  .reservetable {
+    h2 {
+      font-size: 38px;
+      max-width: 75%;
+    }
+    height: 372px;
+  }
+  .locationmapsection {
+    .location-map-details {
+      margin-left: 20px;
+      margin-right: auto;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+      h2 {
+        font-size: 38px;
+      }
+    }
+    .col-md-5 {
+      text-align: left;
+    }
+  }
+
+  .location-banner {
+    min-height: 292px;
+  }
+  footer {
+    text-align: center;
+    .container {
+      .row {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+      }
+      .footermenuitems2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .footerlogo {
+        margin-left: auto;
+        margin-right: 13%;
+        img {
+          width: fit-content;
+        }
+      }
+      .visiteatalyarabiadiv {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .rowfirst {
+      margin-bottom: 40px !important;
+    }
+    .footerlogo {
+      margin-bottom: 40px;
+      img {
+        width: 145px;
+      }
+    }
+    .footermenuitems {
+      display: flex;
+      flex-direction: column;
+      li {
+        margin-right: 0px !important;
+        margin-top: 20px;
+        color: #333333;
+        font-family: 'Museo Sans 500';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 19px;
+        text-align: center;
+      }
+    }
+    .eatbythebeach {
+      text-align: center;
+      width: 168px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    .visiteatalyarabia {
+      text-align: center;
+      padding-right: 0px !important;
+      &::after {
+        top: 30px;
+        right: 0;
+      }
+    }
+    .rowsecond {
+      margin-bottom: 40px !important;
+    }
+    .rowfourth {
+      .social-media-icons {
+        // padding-left: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px !important;
+      }
+      .developedby {
+        text-align: center;
+      }
+      .copyrights {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .section2 {
+    .reservetableholder {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .innerleft {
+        width: 100%;
+        height: auto;
+        .listingImage {
+          height: auto;
+        }
+        .listingItemLI {
+          padding: 0;
+        }
+        .restaurantpicscarousel {
+          margin: 0;
+        }
+      }
+      .innerright {
+        width: 100%;
+        text-align: left;
+        height: auto;
+        padding: 15px 15px 15px 15px;
+        h2 {
+          font-size: 28px;
+          letter-spacing: 0;
+          line-height: 28px;
+        }
+        p {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+          margin-bottom: 20px;
+        }
+        .btn {
+          display: flex;
+          flex-direction: column;
+        }
+        .reserevetablelink {
+          width: 197px;
+          margin-bottom: 15px;
+        }
+        .menulink {
+          margin-left: 0px;
+        }
+      }
+    }
+    .typesoffood {
+      margin-bottom: 0px;
+      padding-bottom: 40px;
+      .listingHolder {
+        padding: 0px;
+        margin: 0px;
+        .listingItemLI {
+          .listingTitle {
+            font-size: 22px;
+            letter-spacing: 0;
+            line-height: 22px;
+            margin-bottom: 5px;
+          }
+          .listingInfos {
+            padding: 15px 15px 15px 15px;
+          }
+          .listingDetails {
+            font-size: 13px;
+            letter-spacing: 0;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+  .enjoydiningandwine {
+    margin-bottom: 0px;
+    .listingItem {
+      margin-bottom: 20px;
+    }
+    .listingHolder {
+      .listingItemLI {
+        .listingTitle {
+          font-size: 22px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .eventssection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .listingHolder {
+      .listingItemLI {
+        .listingTitle {
+          font-size: 22px !important;
+          letter-spacing: 0 !important;
+          line-height: 22px !important;
+        }
+        .listingItem {
+          width: 255px;
+          display: flex;
+          flex-direction: column-reverse;
+          height: fit-content;
+          .listingImage {
+            width: 100%;
+          }
+          .listingInfos {
+            width: 100%;
+            padding: 15px 15px 15px 15px !important;
+          }
+          .listingDetails {
+            margin-bottom: 15px !important;
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 38px !important;
+      letter-spacing: 0 !important;
+      line-height: 38px !important;
+    }
+  }
+  .fullwidthsection {
+    margin-bottom: 40px;
+    .listingHolder {
+      .listingItemLI {
+        .listingInfos {
+          top: auto;
+          left: auto;
+          padding: 15px;
+          width: 100%;
+          height: auto;
+          position: relative;
+          bottom: auto;
+        }
+        .listingImage {
+          width: 100%;
+          height: auto;
+          img {
+            width: 100%;
+            height: 255px;
+            display: block;
+          }
+        }
+        .listingTitle {
+          font-size: 26px;
+          letter-spacing: 0;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+  .section2Market {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+    .blockTitle {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    .brief {
+      font-size: 14px;
+      max-width: 100%;
+    }
+    .listingItem {
+      .listingInfos {
+        padding: 15px;
+        .listingTitle {
+          font-size: 26px;
+          line-height: 26px;
+        }
+        .listingsubTitle {
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+  .section2ClassesEvents {
+    padding: 20px;
+    .listingItem {
+      margin-bottom: 20px;
+      .listingInfos {
+        padding: 15px;
+        .listingTitle {
+          font-size: 26px;
+          letter-spacing: 0;
+          line-height: 26px;
+        }
+        .listingDetails {
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 22px;
+        }
+      }
+    }
+    .privateevents {
+      margin-top: 0px;
+      .listingHolder {
+        .listingItemLI {
+          .listingItem {
+            box-shadow: none;
+            margin-bottom: 0px;
+          }
+          .listingInfos {
+            top: auto;
+            left: auto;
+            width: 100%;
+            padding: 15px;
+            height: auto;
+            position: relative;
+            bottom: auto;
+          }
+          .listingImage {
+            width: 100%;
+            img {
+              width: 100%;
+              display: block;
+              height: 255px;
+            }
+          }
+          .listingTitle {
+            font-size: 26px;
+            letter-spacing: 0;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+
+  .section2ContactUs {
+    background-position: center;
+    height: auto;
+  }
+  .contactussection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .contactusform {
+      h3 {
+        font-size: 38px;
+        letter-spacing: 0;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  .loader {
+    display: none;
+  }
+  .JobApplicationFormsection {
+    h3 {
+      font-size: 38px;
+      letter-spacing: 0;
+      line-height: 38px;
+    }
+    .formActions {
+      justify-content: center;
+    }
+  }
+
+  .section2CookingClasses {
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .listingItem {
+      .listingDate {
+        padding-left: 22px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+      }
+      .listingtime {
+        padding-left: 22px;
+        &::before {
+          left: -2px;
+        }
+      }
+    }
+  }
+  .section2PlanPrivateEvents {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .blockTitle {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    .eventsoptions {
+      .listingImage {
+        margin-top: 20px;
+      }
+    }
+    .privateeventcarousel {
+      margin-left: 0px;
+    }
+  }
+  .PrivateEventformsection .PrivateEventForm .stackedInput,
+  .PrivateEventformsection .PrivateEventForm ul.stackedInput li {
+    display: contents;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    line-height: 1.5em;
+  }
+  .PrivateEventformsection {
+    .blockTitle {
+      font-size: 38px;
+      line-height: 35px;
+    }
+  }
+  .ouropenpositions {
+    padding: 20px 0px 20px 0px;
+  }
+  .JoinOurTeam-banner {
+    height: 42vh;
+  }
+}
+
+/*# sourceMappingURL=projectname-responsive.css.map */

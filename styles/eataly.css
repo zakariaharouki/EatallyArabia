@@ -1,0 +1,5711 @@
+.blockTitle {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center;
+}
+
+.locationmapsection .locationmap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.locationmapsection h2 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.locationmapsection h2 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .locationmapsection h2 {
+    font-size: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .locationmapsection h2 {
+    font-size: 55px;
+  }
+}
+.locationmapsection h2 {
+  line-height: 28px;
+}
+@media screen and (min-width: 320px) {
+  .locationmapsection h2 {
+    line-height: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .locationmapsection h2 {
+    line-height: 55px;
+  }
+}
+.locationmapsection .text {
+  font-family: "Museo Sans 300";
+  font-weight: 300;
+  color: #656565;
+  margin-bottom: 40px;
+}
+.locationmapsection .text {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  .locationmapsection .text {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .locationmapsection .text {
+    font-size: 16px;
+  }
+}
+.locationmapsection .location-map-details {
+  padding-top: 150px;
+  padding-bottom: 128px;
+  margin-left: calc((100vw - 1200px) / 2);
+}
+.locationmapsection .location-map-details .address {
+  padding-left: 30px;
+  position: relative;
+}
+.locationmapsection .location-map-details .address span {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.locationmapsection .location-map-details .address::before {
+  background-image: url(../images/Location.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 1px;
+}
+.locationmapsection .location-map-details p {
+  margin-bottom: 30px;
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.locationmapsection .location-map-details .openingdays {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #333333;
+  font-family: "Museo Sans 700";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+}
+.locationmapsection .location-map-details .openingdays::before {
+  background-image: url(../images/OpeningTimes.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -30px;
+  top: 1px;
+}
+.locationmapsection .location-map-details .phone {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  color: #333333;
+  font-family: "Museo Sans 700";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+}
+.locationmapsection .location-map-details .phone::before {
+  background-image: url(../images/Phone.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  left: -30px;
+  top: 1px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #ffffff;
+  padding: 36px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+header .dk-select {
+  border: none;
+  height: 17px;
+}
+header .dk-select-options-highlight {
+  border-color: #729fc9;
+}
+header .dk-select-options {
+  border-color: #729fc9;
+}
+header .dk-select-open-down {
+  border-color: #729fc9;
+}
+header .dk-option-highlight {
+  border-color: #729fc9;
+}
+header .dk-selected {
+  height: 45px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: relative;
+}
+header .dk-selected::placeholder {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+header .dk-selected::after {
+  border: none;
+}
+header .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: -3px;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/Dropdownarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.burger-menuicon {
+  display: none;
+}
+
+.CloseBurgerMenu {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.main {
+  padding-top: 110px;
+}
+
+.menu {
+  display: flex;
+}
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+.menu li a {
+  font-family: "Museo Sans 700";
+  font-style: normal;
+  font-size: 17px;
+  color: #333333;
+  display: block;
+}
+.menu li a:hover {
+  color: #f8ae00;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn a,
+.btn input[type=submit] {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Museo Sans 700";
+  font-weight: 600;
+  color: #fff;
+  background: #f8ae00;
+  padding: 10px 35px;
+  border-radius: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  border: solid 1px transparent;
+}
+.btn a:hover,
+.btn input[type=submit]:hover {
+  color: #fff;
+  background: #f49626;
+  border: solid 1px #f8ae00;
+}
+
+.ourstores-banner {
+  position: relative;
+  background-image: url(../images/StoresBanner.jpg);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.ourstores-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.ourstores-banner .content-holder .path {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.ourstores-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.ourstores-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .ourstores-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ourstores-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.ourstores-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.ourstores-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .ourstores-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ourstores-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.ourstores-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .ourstores-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ourstores-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.ShopOnline-banner {
+  position: relative;
+  background-image: url(../images/ShopOnlineBanner.jpg);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.ShopOnline-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.ShopOnline-banner .content-holder .path {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.ShopOnline-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.ShopOnline-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .ShopOnline-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ShopOnline-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.ShopOnline-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.ShopOnline-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .ShopOnline-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ShopOnline-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.ShopOnline-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .ShopOnline-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ShopOnline-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.News-banner {
+  position: relative;
+  background-image: url(../images/Market.jpg);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.News-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.News-banner .content-holder .path {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.News-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.News-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .News-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .News-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.News-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.News-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .News-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .News-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.News-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .News-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .News-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.Contactus-banner {
+  position: relative;
+  background-image: url(../images/ContactusBanner.jpg);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.Contactus-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.Contactus-banner .content-holder .path {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.Contactus-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.Contactus-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .Contactus-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Contactus-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.Contactus-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.Contactus-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .Contactus-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Contactus-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.Contactus-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .Contactus-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Contactus-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.newssection {
+  margin-top: 80px;
+}
+.newssection .loadmore {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 100px;
+}
+.newssection .loadmore a {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  position: relative;
+}
+.newssection .loadmore a::before {
+  content: "";
+  background-image: url(../images/LoadMore-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 11px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -18px;
+}
+.newssection .listingItemLI {
+  margin-bottom: 24px;
+}
+.newssection .listingItemLI .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.newssection .listingItemLI .listingItem .listingImage {
+  width: 100%;
+}
+.newssection .listingItemLI .listingItem .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newssection .listingItemLI .listingItem .listingInfos {
+  padding: 30px;
+}
+.newssection .listingItemLI .listingItem .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+.newssection .listingItemLI .learnmorebtn a {
+  border: 1px solid #f8ae00;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  padding: 12px 42px;
+}
+.newssection .listingItemLI .learnmorebtn a:hover {
+  color: #fff;
+  background-color: #f8ae00;
+}
+
+.storedetails-banner {
+  position: relative;
+  background-image: url(../images/storedetailsBanner.jpg);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.storedetails-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.storedetails-banner .content-holder .path {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+}
+.storedetails-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.storedetails-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .storedetails-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .storedetails-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.storedetails-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.storedetails-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .storedetails-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .storedetails-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.storedetails-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .storedetails-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .storedetails-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.homepage-banner {
+  position: relative;
+  background-image: url(../images/HomeBannerImage.png);
+  background-size: cover;
+  height: 42.1052631579vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+}
+.homepage-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.homepage-banner .content-holder .eventdate {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+}
+.homepage-banner .content-holder .vieweventbtn {
+  margin-top: 30px;
+}
+.homepage-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.homepage-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .homepage-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .homepage-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.homepage-banner .content-holder .text {
+  font-family: "Museo Sans 300";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+.homepage-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .homepage-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .homepage-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.homepage-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .homepage-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .homepage-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.intro-blocks {
+  padding: 100px 0px;
+}
+.intro-blocks .row {
+  align-items: center;
+}
+.intro-blocks .container .intro-block:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.intro-block h2 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.intro-block h2 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .intro-block h2 {
+    font-size: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .intro-block h2 {
+    font-size: 55px;
+  }
+}
+.intro-block .text {
+  color: #656565;
+  font-family: "Museo Sans 500";
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.intro-block .text {
+  line-height: 28px;
+}
+@media screen and (min-width: 320px) {
+  .intro-block .text {
+    line-height: calc(28px + 0 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .intro-block .text {
+    line-height: 28px;
+  }
+}
+.intro-block img {
+  position: relative;
+  max-width: 100%;
+}
+.intro-block .image-holder {
+  position: relative;
+}
+.intro-block .image-holder::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+  height: 101%;
+  -moz-transform: translate3d(85%, 0px, 0px);
+  -webkit-transform: translate3d(85%, 0px, 0px);
+  -o-transform: translate3d(85%, 0px, 0px);
+  -ms-transform: translate3d(85%, 0px, 0px);
+  transform: translate3d(85%, 0px, 0px);
+  -webkit-transition: transform 0.8s ease-out 0s;
+  -moz-transition: transform 0.8s ease-out 0s;
+  -ms-transition: transform 0.8s ease-out 0s;
+  -o-transition: transform 0.8s ease-out 0s;
+  transition: transform 0.8s ease-out 0s;
+  z-index: 2;
+  will-change: transform;
+}
+.intro-block .image-holder::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+  height: 101%;
+  -moz-transform: translate3d(-85%, 0px, 0px);
+  -webkit-transform: translate3d(-85%, 0px, 0px);
+  -o-transform: translate3d(-85%, 0px, 0px);
+  -ms-transform: translate3d(-85%, 0px, 0px);
+  transform: translate3d(-85%, 0px, 0px);
+  will-change: transform;
+  z-index: 2;
+  -webkit-transition: transform 0.8s ease-out 0s;
+  -moz-transition: transform 0.8s ease-out 0s;
+  -ms-transition: transform 0.8s ease-out 0s;
+  -o-transition: transform 0.8s ease-out 0s;
+  transition: transform 0.8s ease-out 0s;
+}
+.intro-block .image-holder.inView:before {
+  -moz-transform: translate3d(-102%, 0px, 0px);
+  -webkit-transform: translate3d(-102%, 0px, 0px);
+  -o-transform: translate3d(-102%, 0px, 0px);
+  -ms-transform: translate3d(-102%, 0px, 0px);
+  transform: translate3d(-102%, 0px, 0px);
+}
+.intro-block .image-holder.inView:after {
+  -moz-transform: translate3d(102%, 0px, 0px);
+  -webkit-transform: translate3d(102%, 0px, 0px);
+  -o-transform: translate3d(102%, 0px, 0px);
+  -ms-transform: translate3d(102%, 0px, 0px);
+  transform: translate3d(102%, 0px, 0px);
+}
+.intro-block .text-holder {
+  z-index: 5;
+}
+.intro-block .text-holder .image-holder-mobile {
+  display: none;
+}
+
+.location-banner {
+  height: 31.6455696203vw;
+  background: transparent;
+}
+
+.location-map {
+  background-image: url(../images/location-map.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.4545454545vw;
+}
+.location-map h2 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 25px;
+}
+.location-map h2 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .location-map h2 {
+    font-size: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .location-map h2 {
+    font-size: 55px;
+  }
+}
+.location-map h2 {
+  line-height: 28px;
+}
+@media screen and (min-width: 320px) {
+  .location-map h2 {
+    line-height: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .location-map h2 {
+    line-height: 55px;
+  }
+}
+.location-map .text {
+  font-family: "Museo Sans 300";
+  font-weight: 300;
+  color: #656565;
+  margin-bottom: 40px;
+}
+.location-map .text {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  .location-map .text {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .location-map .text {
+    font-size: 16px;
+  }
+}
+.location-map .location-map-details {
+  padding-top: 150px;
+  padding-bottom: 128px;
+}
+.location-map .location-map-details .address {
+  margin-left: 30px;
+  color: #333333;
+  font-family: "Museo Sans 700";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.location-map .location-map-details .address::before {
+  background-image: url(/images/Location.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -30px;
+  top: 1px;
+}
+.location-map .location-map-details p {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  color: #6c6c6c;
+  font-family: "Museo Sans";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.location-map .location-map-details .openingdays {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #333333;
+  font-family: "Museo Sans 700";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+}
+.location-map .location-map-details .openingdays::before {
+  background-image: url(/images/OpeningTimes.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -30px;
+  top: 1px;
+}
+.location-map .location-map-details .phone {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  color: #333333;
+  font-family: "Museo Sans 700";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: relative;
+}
+.location-map .location-map-details .phone::before {
+  background-image: url(/images/Phone.png);
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 17px;
+  left: -30px;
+  top: 1px;
+}
+
+.contact-us {
+  padding: 100px 0px;
+}
+.contact-us .contact-us-container {
+  max-width: 490px;
+  margin: 0px auto;
+}
+.contact-us h2 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  color: #333333;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.contact-us h2 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .contact-us h2 {
+    font-size: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .contact-us h2 {
+    font-size: 55px;
+  }
+}
+.contact-us h2 {
+  line-height: 28px;
+}
+@media screen and (min-width: 320px) {
+  .contact-us h2 {
+    line-height: calc(28px + 27 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .contact-us h2 {
+    line-height: 55px;
+  }
+}
+.contact-us label {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: normal;
+  color: #737373;
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-us .input-parent {
+  position: relative;
+  margin-bottom: 30px;
+}
+.contact-us input[type=text] {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  background: #f2f1ef;
+  padding: 16px 15px;
+}
+.contact-us textarea {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  background: #f2f1ef;
+  height: 150px;
+  padding: 16px 15px;
+}
+.contact-us .btn {
+  text-align: center;
+}
+
+.burger-menu div {
+  width: 35px;
+  height: 3px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  background: #f8ae00;
+}
+.burger-menu div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.burger-menu.active div:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.burger-menu.active div:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.active div:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-5px, -4px);
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+
+#phone {
+  font-family: "Museo Sans 500";
+  background: #f2f1ef;
+  width: 100%;
+  height: 50px;
+}
+
+.errorMessage {
+  display: none;
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  font-family: "Museo Sans 500";
+}
+
+.homeevents {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.homeevents .listingItem {
+  display: flex;
+  flex-direction: row;
+  height: 158px;
+  width: 588px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.homeevents .listingImage {
+  width: 45%;
+  height: 100%;
+}
+.homeevents .listingImage img {
+  height: 100%;
+  object-fit: cover;
+}
+.homeevents .listingInfos {
+  width: 55%;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.homeevents .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.homeevents .listingInfos .listingDetails {
+  color: #656565;
+  width: 268px;
+  margin-left: 0;
+  margin-right: auto;
+  font-family: "Museo Sans 300";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.homeevents .owl-nav {
+  top: 39%;
+  transform: translate(-50%, -39%);
+  width: 638px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+}
+
+.sectionOurStores {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sectionOurStores .blockTitle {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.sectionOurStores .ourstores {
+  height: 100%;
+}
+.sectionOurStores .ourstores .owl-nav {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sectionOurStores .ourstores .owl-nav img {
+  height: 50px;
+  width: 50px;
+}
+.sectionOurStores .ourstores .listingItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.sectionOurStores .ourstores .listingItem .listingInfos {
+  padding: 30px;
+}
+.sectionOurStores .ourstores .listingItem .listingImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sectionOurStores .ourstores .listingItem .listingImage img {
+  width: 100%;
+}
+.sectionOurStores .ourstores .listingItem .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.sectionOurStores .ourstores .listingItem .listingDetails {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns {
+  vertical-align: middle;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns .btn {
+  vertical-align: middle;
+  display: inline-block;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns .btn a {
+  height: 36px;
+  width: 154px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  padding-top: 10px;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns a {
+  display: inline-block;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns .mainmenubtn {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  margin-left: 25px;
+  position: relative;
+}
+.sectionOurStores .ourstores .listingItem .listingbtns .mainmenubtn::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 17px;
+  left: -23px;
+  bottom: 0;
+  display: block;
+  background-image: url(../images/MainMenu.svg);
+}
+
+.aboutus .row {
+  align-items: center;
+  margin-bottom: 100px;
+}
+.aboutus .row .col-md-6:first-child h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.aboutus .row .col-md-6:first-child p {
+  color: #6c6c6c;
+  width: 486px;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.aboutus .row .col-md-6:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus .listingHolder {
+  align-items: flex-start;
+}
+.aboutus .listingHolder .listingInfos {
+  box-sizing: border-box;
+  height: 240px;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  border-top: 0;
+}
+.aboutus .listingHolder .listingDetails {
+  padding: 36px;
+  padding-top: 0;
+}
+.aboutus .listingHolder .col-md-4 {
+  text-align: center;
+}
+.aboutus .listingHolder .col-md-4 .listingImage {
+  height: 285px;
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.aboutus .listingHolder .col-md-4 .listingImage img {
+  max-width: 100%;
+}
+.aboutus .listingHolder .col-md-4 h3 {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 55px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  top: -26px;
+}
+.aboutus .listingHolder .col-md-4 h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80px;
+  position: absolute;
+  background-color: #d7d7d7;
+  right: 0;
+  top: 27px;
+}
+.aboutus .listingHolder .col-md-4 h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 80px;
+  background-color: #d7d7d7;
+  left: 0;
+  top: 27px;
+}
+.aboutus .listingHolder .col-md-4 .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.section2OurStores {
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.section2OurStores .countryselect {
+  max-width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section2OurStores .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.section2OurStores .dk-select-options {
+  border-color: #d1d1d1;
+}
+.section2OurStores .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.section2OurStores .dk-selected {
+  height: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 33.5px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+  position: relative;
+}
+.section2OurStores .dk-selected::placeholder {
+  content: "- Select Country -";
+  margin-top: 14px;
+  margin-left: 20px;
+  color: #000;
+}
+.section2OurStores .dk-selected::after {
+  border: none;
+}
+.section2OurStores .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 14px;
+  height: 9px;
+  transform: translateY(-50%);
+  background-image: url(../images/Dropdownarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section2OurStores .listingItemLI {
+  margin-bottom: 24px;
+}
+.section2OurStores .listingItemLI:last-child, .section2OurStores .listingItemLI:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.section2OurStores .listingItemLI .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns {
+  vertical-align: middle;
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns .btn {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns .btn a {
+  height: 36px;
+  width: 154px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  padding-top: 10px;
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns a {
+  display: inline-block;
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns .mainmenubtn {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  margin-left: 25px;
+  position: relative;
+}
+.section2OurStores .listingItemLI .listingItem .listingbtns .mainmenubtn::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 17px;
+  left: -23px;
+  bottom: 0;
+  display: block;
+  background-image: url(../images/MainMenu.svg);
+}
+.section2OurStores .listingItemLI .listingItem .listingImage {
+  width: 100%;
+  height: 100%;
+}
+.section2OurStores .listingItemLI .listingItem .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2OurStores .listingItemLI .listingItem .listingInfos {
+  padding: 30px;
+}
+.section2OurStores .listingItemLI .listingItem .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.section2OurStores .listingItemLI .listingItem .listingInfos .listingDetails {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.section2storedetails .blockTitle {
+  margin-bottom: 20px;
+}
+.section2storedetails .brief {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section2storedetails .ourmenupics {
+  width: 66.6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 146px;
+  position: relative;
+}
+.section2storedetails .ourmenupics img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2storedetails .ourmenupics .owl-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 107%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -24px;
+}
+.section2storedetails .ourmenupics .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
+}
+.section2storedetails .ourmenupics .owl-dot {
+  display: inline-block;
+  background-color: #9b9b9b !important;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+}
+.section2storedetails .ourmenupics .owl-dot.active {
+  margin-top: -2px;
+  display: inline-block;
+  background-color: #f8ae00 !important;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.section2storedetails .btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section2storedetails .btn a {
+  margin-right: 24px;
+}
+.section2storedetails .btn :last-child a {
+  margin-right: 0px;
+}
+.section2storedetails .btn .mainmenulink {
+  position: relative;
+  padding-left: 52px;
+}
+.section2storedetails .btn .mainmenulink::before {
+  content: "";
+  display: block;
+  background-image: url(../images/MainMenuwhite.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 17px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 26px;
+}
+.section2storedetails .btn .kidsmenulink {
+  position: relative;
+  padding-left: 56px;
+}
+.section2storedetails .btn .kidsmenulink::before {
+  content: "";
+  display: block;
+  background-image: url(../images/KidsMenu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 7px;
+  left: 26px;
+}
+.section2storedetails .btn .breakfastlink {
+  position: relative;
+  padding-left: 53px;
+}
+.section2storedetails .btn .breakfastlink::before {
+  content: "";
+  display: block;
+  background-image: url(../images/BreakfastMenu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 8px;
+  left: 26px;
+}
+.section2storedetails .storecard {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 268px;
+  position: relative;
+  z-index: 10;
+  margin-top: -84px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+.section2storedetails .storecard .row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.section2storedetails .storecard .storecarditem {
+  text-align: center;
+  padding: 40px 31px;
+}
+.section2storedetails .storecard .itemimage {
+  margin-bottom: 20px;
+}
+.section2storedetails .storecard .itemtitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.section2storedetails .storecard .itemdetails {
+  color: #303030;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.marketandcounters {
+  background-color: #f8f8f8;
+  padding: 100px;
+  padding-bottom: 76px;
+}
+.marketandcounters .blockTitle {
+  margin-bottom: 40px;
+}
+.marketandcounters .listingItemLI {
+  margin-bottom: 24px;
+}
+.marketandcounters .listingItemLI .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.marketandcounters .listingItemLI .listingItem .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.marketandcounters .listingItemLI .listingItem .listingInfos {
+  padding: 30px;
+}
+.marketandcounters .listingItemLI .listingItem .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  margin-bottom: 15px;
+}
+.marketandcounters .listingItemLI .listingItem .listingInfos .listingDetails {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.subscribenewslettersection {
+  background-color: #f8f8f8;
+  width: 100%;
+  margin-bottom: 131px;
+  padding: 80px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.subscribenewslettersection .blockTitle {
+  font-size: 40px;
+  line-height: 43px;
+  margin-bottom: 10px;
+}
+.subscribenewslettersection .inputcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subscribenewslettersection .inputcolumn::after {
+  content: "Sign up";
+  background-color: #f8ae00;
+  color: #fff;
+  height: 50px;
+  width: 138px;
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0px;
+  padding: 17px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.subscribenewslettersection .inputcolumn::after:hover {
+  background-color: #f49626 !important;
+}
+.subscribenewslettersection .subscribeinput {
+  box-sizing: border-box;
+  height: 50px;
+  width: 486px;
+  border: 1px solid #d1d1d1;
+  border-radius: 25px;
+  background-color: #ffffff;
+  position: relative;
+  padding: 17px 20px;
+}
+.subscribenewslettersection .subscribeinput::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 300";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+.subscribenewslettersection .form-intro {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.subscribenewslettersection input[type=radio]:not(old):checked + label:before,
+.subscribenewslettersection input[type=checkbox]:not(old):checked + label:before {
+  background: #f8ae00;
+  background-image: url(../images/Check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 12px;
+}
+.subscribenewslettersection .stackedInput {
+  margin-top: 15px;
+}
+.subscribenewslettersection .stackedInput input {
+  height: 12px;
+}
+.subscribenewslettersection .stackedInput label {
+  margin-left: 41px;
+}
+.subscribenewslettersection .stackedInput,
+.subscribenewslettersection ul.stackedInput li {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  line-height: 1.5em;
+}
+.subscribenewslettersection .stackedInput :first-child,
+.subscribenewslettersection ul.stackedInput li :first-child {
+  margin-left: -40px;
+}
+.subscribenewslettersection input[type=checkbox]:not(old),
+.subscribenewslettersection input[type=radio]:not(old) {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+.subscribenewslettersection input[type=checkbox]:not(old) + label:before,
+.subscribenewslettersection input[type=radio]:not(old) + label:before {
+  display: inline-block;
+  background: #fff;
+  margin-right: 5px;
+  vertical-align: bottom;
+  float: left;
+  content: "";
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+
+.ourmanifesto {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 100px 0;
+}
+.ourmanifesto h2 {
+  margin-bottom: 20px;
+}
+.ourmanifesto .form-intro {
+  max-width: 40%;
+  margin: 0 auto 23px auto;
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+}
+.ourmanifesto .listingHolder .owl-prev {
+  position: absolute;
+  right: 97%;
+  top: 41%;
+}
+.ourmanifesto .listingHolder .owl-next {
+  left: 97%;
+  position: absolute;
+  top: 41%;
+}
+.ourmanifesto .listingHolder .listingItemLI .listingInfo {
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  padding-top: 162px;
+  margin-top: -125px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.ourmanifesto .listingHolder .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.ourmanifesto .listingHolder .listingImage {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  display: block;
+}
+.ourmanifesto .listingHolder .listingImage img {
+  object-fit: contain;
+}
+.ourmanifesto .listingHolder .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.whoiseataly {
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.whoiseataly .row {
+  align-items: center;
+}
+.whoiseataly p {
+  margin-bottom: 58px;
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.whoiseataly .blockTitle {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.reservetable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 330px;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  align-items: center;
+  background-image: url(../images/MarketMainBannerImage.jpg);
+}
+.reservetable h2 {
+  color: #ffffff;
+  padding-bottom: 30px;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 400;
+  max-width: 49%;
+}
+
+footer {
+  background: #f2f1ef;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+footer .boldlink {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+footer .socialicons {
+  display: inline-block;
+  margin-top: 30px;
+}
+footer .socialicons li {
+  display: inline-block;
+}
+footer .socialicons .facebookicon {
+  display: block;
+  content: "";
+  background-image: url(/images/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38px;
+}
+footer .socialicons .instaicon {
+  display: block;
+  content: "";
+  background-image: url(/images/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38px;
+}
+footer .secondgroup .storeslist li {
+  margin-top: 10px;
+}
+footer .secondgroup .storeslist li .storeitem {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+footer .thirdgroup .pagelinks,
+footer .fourthgroup .pagelinks {
+  display: inline-block;
+}
+footer .thirdgroup .pagelinks li,
+footer .fourthgroup .pagelinks li {
+  margin-bottom: 25px;
+}
+footer .copyrights {
+  margin-top: 90px;
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 13px;
+}
+
+.RestaurantPage-banner {
+  width: 100%;
+  position: relative;
+  background-image: url(../images/Restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  max-height: 696px;
+  background-color: rgba(0, 0, 0, 0.368627451);
+  background-blend-mode: overlay;
+  position: relative;
+}
+.RestaurantPage-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.RestaurantPage-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.RestaurantPage-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.RestaurantPage-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .RestaurantPage-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .RestaurantPage-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.RestaurantPage-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.RestaurantPage-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .RestaurantPage-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .RestaurantPage-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.RestaurantPage-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .RestaurantPage-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .RestaurantPage-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2 {
+  margin-top: 80px;
+}
+.section2 .reservetableholder {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+.section2 .innerleft {
+  padding-left: 0px;
+}
+.section2 .innerleft .listingImage {
+  height: 100%;
+}
+.section2 .innerleft .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 .innerleft .owl-next {
+  top: 40%;
+  right: 20px;
+  position: absolute;
+}
+.section2 .innerleft .owl-next img {
+  width: 30px;
+  height: 30px;
+}
+.section2 .innerleft .owl-prev {
+  top: 40%;
+  left: 20px;
+  position: absolute;
+}
+.section2 .innerleft .owl-prev img {
+  width: 30px;
+  height: 30px;
+}
+.section2 .innerleft .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 10%);
+}
+.section2 .innerleft .owl-dot {
+  display: inline-block;
+  background-color: #fff !important;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+}
+.section2 .innerleft .owl-dot.active {
+  margin-top: -2px;
+  display: inline-block;
+  background-color: #f8ae00 !important;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.section2 .innerright {
+  padding: 50px 50px 35px 60px;
+}
+.section2 .innerright h2 {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.section2 .innerright p {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 45px;
+}
+.section2 .innerright .menulink {
+  text-transform: uppercase;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 17px;
+  box-sizing: border-box;
+  height: 39px;
+  width: 197px;
+  color: #693835;
+  border: 1px solid #693835;
+  margin-left: 20px;
+  border-radius: 20px;
+  background-color: rgba(243, 191, 69, 0);
+  position: relative;
+}
+.section2 .innerright .menulink::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Menulink.png);
+  width: 18px;
+  height: 19px;
+  left: 14%;
+  top: 10px;
+}
+.section2 .innerright .menulink:hover {
+  background-color: #693835;
+  color: #ffffff;
+}
+.section2 .innerright .menulink:hover::before {
+  filter: invert(100%) contrast(24);
+}
+
+.typesoffood {
+  margin-bottom: 100px;
+}
+.typesoffood .listingHolder .listingItemLI {
+  width: 100%;
+  background-color: #ffffff;
+}
+.typesoffood .listingHolder .listingItemLI .listingItem {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.typesoffood .listingHolder .listingItemLI .listingInfos {
+  padding: 20px 30px;
+}
+.typesoffood .listingHolder .listingItemLI .listingTitle {
+  margin-bottom: 20px;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  font-weight: 400;
+}
+.typesoffood .listingHolder .listingItemLI .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  line-height: 25px;
+}
+.typesoffood .listingHolder .listingImage {
+  width: 100%;
+}
+.typesoffood .listingHolder .listingImage img {
+  max-width: 100%;
+}
+
+.enjoydiningandwine {
+  margin-bottom: 100px;
+}
+.enjoydiningandwine .listingHolder .listingItemLI {
+  width: 100%;
+  background-color: #ffffff;
+}
+.enjoydiningandwine .listingHolder .listingItemLI .listingItem {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.enjoydiningandwine .listingHolder .listingItemLI .listingInfos {
+  padding: 30px 40px 35px 40px;
+}
+.enjoydiningandwine .listingHolder .listingItemLI .listingTitle {
+  margin-bottom: 20px;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  font-weight: 400;
+}
+.enjoydiningandwine .listingHolder .listingItemLI .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.enjoydiningandwine .listingHolder .listingImage {
+  width: 100%;
+}
+.enjoydiningandwine .listingHolder .listingImage img {
+  max-width: 100%;
+}
+
+.fullwidthsection {
+  margin-bottom: 100px;
+}
+.fullwidthsection .listingHolder .listingItemLI {
+  width: 100%;
+}
+.fullwidthsection .listingHolder .listingItemLI .listingImage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.fullwidthsection .listingHolder .listingItemLI .listingImage img {
+  width: 100%;
+}
+.fullwidthsection .listingHolder .listingItemLI .listingInfos {
+  min-height: 300px;
+  width: 566px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  padding: 50px 40px;
+}
+.fullwidthsection .listingHolder .listingItemLI .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.fullwidthsection .listingHolder .listingItemLI .listingTitle {
+  margin-bottom: 20px;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.eventssection {
+  height: fit-content;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.eventssection h2 {
+  color: #303030;
+  font-family: "Mrs Eaves XL Serif OT";
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.eventssection .listingItem {
+  display: flex;
+  flex-direction: row;
+  height: 353px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.eventssection .listingImage {
+  width: 33.3%;
+  height: 100%;
+}
+.eventssection .listingImage img {
+  height: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.eventssection .listingInfos {
+  width: 66.6%;
+  padding: 40px;
+}
+.eventssection .listingInfos .listingDate {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.eventssection .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.eventssection .listingInfos .listingDetails {
+  color: #656565;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-bottom: 76px;
+}
+.eventssection .owl-nav {
+  top: 39%;
+  transform: translate(-50%, -39%);
+  width: 62%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+}
+.eventssection .owl-dots {
+  text-align: center;
+  padding-top: 20px;
+}
+.eventssection .owl-dot {
+  display: inline-block;
+  background-color: #9b9b9b !important;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: 10px;
+}
+.eventssection .owl-dot.active {
+  margin-top: -2px;
+  display: inline-block;
+  background-color: #f8ae00 !important;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.MarketPage-banner {
+  background-image: url(../images/Market.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-blend-mode: overlay;
+  width: 100%;
+  max-height: 696px;
+  margin-top: 110px;
+  position: relative;
+}
+.MarketPage-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.MarketPage-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.MarketPage-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.MarketPage-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .MarketPage-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .MarketPage-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.MarketPage-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.MarketPage-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .MarketPage-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .MarketPage-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.MarketPage-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .MarketPage-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .MarketPage-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2Market {
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.section2Market h2 {
+  margin-bottom: 15px;
+}
+.section2Market .form-intro {
+  margin-left: auto;
+  margin-right: auto;
+  color: #3e3e3e;
+  font-family: "Museo Sans 500";
+  max-width: 60%;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section2Market .listingItemLI {
+  margin-bottom: 24px;
+}
+.section2Market .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.section2Market .listingItem .listingImage {
+  width: 100%;
+}
+.section2Market .listingItem .listingImage img {
+  max-width: 100%;
+}
+.section2Market .listingItem .listingInfos {
+  padding: 30px;
+}
+.section2Market .listingItem .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+.section2Market .listingItem .listingInfos .listingsubTitle {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.section2Market .listingItem .listingInfos .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.Classesandevents-banner {
+  background-image: url(../images/ClassedandEvents-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-blend-mode: overlay;
+  width: 100%;
+  max-height: 696px;
+  margin-top: 110px;
+  position: relative;
+}
+.Classesandevents-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.Classesandevents-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.Classesandevents-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.Classesandevents-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .Classesandevents-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Classesandevents-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.Classesandevents-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.Classesandevents-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .Classesandevents-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Classesandevents-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.Classesandevents-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .Classesandevents-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .Classesandevents-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2ClassesEvents {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.section2ClassesEvents .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.section2ClassesEvents .listingItem .listingImage img {
+  max-width: 100%;
+}
+.section2ClassesEvents .listingItem .listingInfos {
+  padding: 30px;
+}
+.section2ClassesEvents .listingItem .listingInfos .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+.section2ClassesEvents .listingItem .listingInfos .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+.section2ClassesEvents .privateevents {
+  margin-top: 60px;
+}
+.section2ClassesEvents .privateevents .listingHolder .listingItemLI .listingItem {
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.section2ClassesEvents .privateevents .listingHolder .listingItemLI .listingInfos {
+  bottom: 40px;
+  left: 40px;
+  padding: 40px;
+  position: absolute;
+  height: fit-content;
+  width: 556px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.section2ClassesEvents .privateevents .listingHolder .listingItemLI .listingImage {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.section2ClassesEvents .privateevents .listingHolder .listingItemLI .listingImage img {
+  width: 100%;
+  height: 100%;
+}
+.section2ClassesEvents .privateevents .listingHolder .listingItemLI .listingTitle {
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.CookingClasses-banner {
+  background-image: url(../images/ClassedandEvents-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-blend-mode: overlay;
+  width: 100%;
+  max-height: 696px;
+  margin-top: 110px;
+  position: relative;
+}
+.CookingClasses-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.CookingClasses-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.CookingClasses-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.CookingClasses-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .CookingClasses-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .CookingClasses-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.CookingClasses-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.CookingClasses-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .CookingClasses-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .CookingClasses-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.CookingClasses-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .CookingClasses-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .CookingClasses-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2CookingClasses {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.section2CookingClasses .storeselect {
+  max-width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.section2CookingClasses .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.section2CookingClasses .dk-select-options {
+  border-color: #d1d1d1;
+}
+.section2CookingClasses .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.section2CookingClasses .dk-selected {
+  height: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 33.5px;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+  position: relative;
+}
+.section2CookingClasses .dk-selected::placeholder {
+  content: "- Select Country -";
+  margin-top: 14px;
+  margin-left: 20px;
+  color: #000;
+}
+.section2CookingClasses .dk-selected::after {
+  border: none;
+}
+.section2CookingClasses .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 14px;
+  height: 9px;
+  transform: translateY(-50%);
+  background-image: url(../images/Dropdownarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section2CookingClasses .blockTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section2CookingClasses .form-intro {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  width: 66.6%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.section2CookingClasses .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+}
+.section2CookingClasses .listingItem .listingImage img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2CookingClasses .listingItem .listingInfos {
+  padding: 30px;
+  padding-top: 20px;
+}
+.section2CookingClasses .listingItem .listinglocation {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.section2CookingClasses .listingItem .listinglocation::before {
+  content: "";
+  background-image: url(../images/Locationiconnew.svg);
+  width: 15px;
+  height: 17px;
+  left: 0;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  background-size: contain;
+}
+.section2CookingClasses .listingItem .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.section2CookingClasses .listingItem .listingDetails {
+  color: #333333;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 60px;
+}
+.section2CookingClasses .listingItem .learnmorebtn {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+.section2CookingClasses .listingItem .learnmorebtn a {
+  border: 1px solid #f8ae00;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  padding: 12px 42px;
+  text-transform: uppercase;
+}
+.section2CookingClasses .listingItem .learnmorebtn a:hover {
+  color: #fff;
+  background-color: #f8ae00;
+}
+.section2CookingClasses .listingItem .btn {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.overlaypopup {
+  display: none;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 11;
+}
+
+.eventpopup {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 80vh;
+  overflow-y: visible;
+  max-width: 792px;
+  background-color: #ffffff;
+  padding: 44px 30px 40px 30px;
+}
+.eventpopup .scrollable {
+  max-height: 68vh;
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-face-color: #f49626; /* Firefox 63 compatibility */
+  scrollbar-track-color: #f49626; /* Firefox 63 compatibility */
+  scrollbar-color: #f8ae00 #f1f1f1;
+  scrollbar-width: thin;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.eventpopup .scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+.eventpopup .scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.eventpopup .scrollable::-webkit-scrollbar-thumb {
+  background: #f8ae00;
+}
+.eventpopup .scrollable::-webkit-scrollbar-thumb:hover {
+  background: #f49626;
+}
+.eventpopup .closebtn {
+  content: "";
+  background-image: url("../images/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 97.6%;
+  top: -15px;
+}
+.eventpopup h2 {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 11px;
+  font-weight: 400;
+}
+.eventpopup .popuptime {
+  display: inline-block;
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  position: relative;
+}
+.eventpopup .popuptime::before {
+  content: "";
+  background-image: url(../images/Clock-1.png);
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0px;
+}
+.eventpopup .popupdate {
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-right: 35px;
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+}
+.eventpopup .popupdate::before {
+  content: "";
+  background-image: url(../images/Calendar-1.png);
+  position: absolute;
+  width: 15px;
+  height: 17px;
+  left: 0px;
+}
+.eventpopup .eventpricing {
+  color: #333333;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+.eventpopup .popupimage {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.eventpopup .popupimage img {
+  max-width: 100%;
+}
+.eventpopup .popupeventdetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.PlanPrivateEvents-banner {
+  background-image: url(../images/ClassedandEvents-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-blend-mode: overlay;
+  width: 100%;
+  max-height: 696px;
+  margin-top: 110px;
+  position: relative;
+}
+.PlanPrivateEvents-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.PlanPrivateEvents-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.PlanPrivateEvents-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.PlanPrivateEvents-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .PlanPrivateEvents-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .PlanPrivateEvents-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.PlanPrivateEvents-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.PlanPrivateEvents-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .PlanPrivateEvents-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .PlanPrivateEvents-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.PlanPrivateEvents-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .PlanPrivateEvents-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .PlanPrivateEvents-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2PlanPrivateEvents {
+  padding: 80px 80px 96px 80px;
+  text-align: center;
+}
+.section2PlanPrivateEvents h2 {
+  margin-bottom: 15px;
+}
+.section2PlanPrivateEvents .form-intro {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.section2PlanPrivateEvents .btn {
+  margin-bottom: 60px;
+}
+.section2PlanPrivateEvents .priveventcarouselholder {
+  margin-bottom: 90px;
+}
+.section2PlanPrivateEvents .privateeventcarousel .owl-prev {
+  position: absolute;
+  left: 15%;
+  top: 39%;
+}
+.section2PlanPrivateEvents .privateeventcarousel .owl-next {
+  position: absolute;
+  right: 15%;
+  top: 39%;
+}
+.section2PlanPrivateEvents .privateeventcarousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translate(-50%, 10%);
+}
+.section2PlanPrivateEvents .privateeventcarousel .owl-dot {
+  display: inline-block;
+  background-color: #9b9b9b !important;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.section2PlanPrivateEvents .privateeventcarousel .owl-dot.active {
+  margin-top: -2px;
+  display: inline-block;
+  background-color: #f8ae00 !important;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.section2PlanPrivateEvents .eventsoptions ul {
+  justify-content: center;
+}
+.section2PlanPrivateEvents .eventsoptions .listingItemLI {
+  margin-bottom: 40px;
+}
+.section2PlanPrivateEvents .eventsoptions .listingImage {
+  margin-bottom: 20px;
+}
+.section2PlanPrivateEvents .eventsoptions .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.section2PlanPrivateEvents .eventsoptions .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.PrivateEventformsection {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding-top: 104px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.PrivateEventformsection h2 {
+  margin-bottom: 50px;
+}
+.PrivateEventformsection .PrivateEventForm input[type=radio]:not(old):checked + label:before,
+.PrivateEventformsection .PrivateEventForm input[type=checkbox]:not(old):checked + label:before {
+  background: #f8ae00;
+  background-image: url(../images/Check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 12px;
+}
+.PrivateEventformsection .PrivateEventForm .stackedInput input {
+  height: 12px;
+}
+.PrivateEventformsection .PrivateEventForm .stackedInput,
+.PrivateEventformsection .PrivateEventForm ul.stackedInput li {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  line-height: 1.5em;
+}
+.PrivateEventformsection .PrivateEventForm .stackedInput :first-child,
+.PrivateEventformsection .PrivateEventForm ul.stackedInput li :first-child {
+  margin-left: -40px;
+}
+.PrivateEventformsection .PrivateEventForm input[type=checkbox]:not(old),
+.PrivateEventformsection .PrivateEventForm input[type=radio]:not(old) {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+.PrivateEventformsection .PrivateEventForm input[type=checkbox]:not(old) + label:before,
+.PrivateEventformsection .PrivateEventForm input[type=radio]:not(old) + label:before {
+  display: inline-block;
+  background: #fff;
+  margin-right: 5px;
+  vertical-align: bottom;
+  float: left;
+  content: "";
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+}
+.PrivateEventformsection .PrivateEventForm textarea {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.PrivateEventformsection .PrivateEventForm textarea::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+.PrivateEventformsection .PrivateEventForm label {
+  position: relative;
+  display: block;
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.PrivateEventformsection .PrivateEventForm label span {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  color: #f8ae00;
+  width: 10px;
+  height: 10px;
+}
+.PrivateEventformsection .PrivateEventForm input[type=text] {
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.PrivateEventformsection .PrivateEventForm input[type=text]::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 14px;
+}
+.PrivateEventformsection .PrivateEventForm select {
+  margin-bottom: 30px;
+}
+.PrivateEventformsection .PrivateEventForm select option {
+  margin-top: 14px;
+}
+.PrivateEventformsection .PrivateEventForm .erroMessage {
+  display: none;
+}
+.PrivateEventformsection .PrivateEventForm .formActions {
+  text-align: center;
+}
+.PrivateEventformsection .PrivateEventForm .normalBtn {
+  height: 40px;
+  width: 201px;
+  border-radius: 20px;
+  background-color: #f8ae00;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+}
+.PrivateEventformsection .PrivateEventForm .normalBtn:hover {
+  color: #fff;
+  background: #f49626;
+  border: 1px solid #f8ae00;
+}
+.PrivateEventformsection .PrivateEventForm .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.PrivateEventformsection .PrivateEventForm .dk-select-options {
+  border-color: #d1d1d1;
+}
+.PrivateEventformsection .PrivateEventForm .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.PrivateEventformsection .PrivateEventForm .dk-selected {
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.PrivateEventformsection .PrivateEventForm .dk-selected::placeholder {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.PrivateEventformsection .PrivateEventForm .dk-selected::after {
+  border: none;
+}
+.PrivateEventformsection .PrivateEventForm .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/dropdownicon.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.PrivateEventFormSubmitted {
+  display: none;
+  text-align: center;
+}
+.PrivateEventFormSubmitted img {
+  margin-bottom: 20px;
+}
+.PrivateEventFormSubmitted h3 {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.PrivateEventFormSubmitted p {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.PrivateEventFormSubmitted .sendanotherrequest {
+  height: 40px;
+  width: 316px;
+  border-radius: 20px;
+  background-color: #f8ae00;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  border: none;
+}
+.PrivateEventFormSubmitted .sendanotherrequest:hover {
+  background-color: #ffffff;
+  color: #f8ae00;
+  border: 1px solid #f8ae00;
+  cursor: pointer;
+}
+
+.JoinOurTeam-banner {
+  background-image: url(../images/JoinOurTeam.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  background-color: rgba(0, 0, 0, 0.568627);
+  background-blend-mode: overlay;
+  width: 100%;
+  max-height: 696px;
+  margin-top: 110px;
+  position: relative;
+}
+.JoinOurTeam-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.JoinOurTeam-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.JoinOurTeam-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.JoinOurTeam-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .JoinOurTeam-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .JoinOurTeam-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.JoinOurTeam-banner .content-holder .text {
+  margin-bottom: 80px;
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.JoinOurTeam-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .JoinOurTeam-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .JoinOurTeam-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.JoinOurTeam-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .JoinOurTeam-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .JoinOurTeam-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+.JoinOurTeam-banner .content-holder .subtext {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.JoinOurTeam-banner .content-holder .subtext {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .JoinOurTeam-banner .content-holder .subtext {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .JoinOurTeam-banner .content-holder .subtext {
+    font-size: 18px;
+  }
+}
+.JoinOurTeam-banner .content-holder .subtext {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .JoinOurTeam-banner .content-holder .subtext {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .JoinOurTeam-banner .content-holder .subtext {
+    line-height: 30px;
+  }
+}
+
+.whatwedosection {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.whatwedosection .row {
+  align-items: center;
+}
+.whatwedosection h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.whatwedosection p {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: left;
+}
+.whatwedosection .ImageHolder {
+  height: 400px;
+  width: 100%;
+}
+.whatwedosection .ImageHolder img {
+  max-width: 100%;
+}
+
+.JoinOurTeamSection {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.JoinOurTeamSection h2 {
+  margin-bottom: 20px;
+}
+.JoinOurTeamSection .form-intro {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+.JoinOurTeamSection .listingHolder .col-md-6 {
+  padding: 30px;
+}
+.JoinOurTeamSection .listingHolder .listingItem {
+  padding: 30px 30px 30px 30px;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+}
+.JoinOurTeamSection .listingHolder .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.JoinOurTeamSection .listingHolder .listingImage {
+  padding-bottom: 20px;
+}
+.JoinOurTeamSection .listingHolder .listingImage img {
+  max-width: 100%;
+}
+.JoinOurTeamSection .listingHolder .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+}
+
+.HowtoApplySection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.HowtoApplySection .row {
+  align-items: center;
+}
+.HowtoApplySection .col-md-5 h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.HowtoApplySection .col-md-5 p {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.ouropenpositions {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.ouropenpositions h2 {
+  margin-bottom: 40px;
+}
+.ouropenpositions .listingItem {
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+}
+.ouropenpositions .listingItem .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.ouropenpositions .listingItem .listingDetails {
+  color: #6c6c6c;
+  font-family: "Museo Sans 300";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+.JobApplicationFormsection {
+  margin-top: 200px;
+}
+.JobApplicationFormsection label {
+  position: relative;
+  display: block;
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.JobApplicationFormsection label span {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  color: #f8ae00;
+  width: 10px;
+  height: 10px;
+}
+.JobApplicationFormsection input {
+  border: 1px solid #d1d1d1 !important;
+  background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.JobApplicationFormsection input::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 300";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 14px;
+}
+.JobApplicationFormsection select {
+  margin-bottom: 30px;
+}
+.JobApplicationFormsection select option {
+  margin-top: 14px;
+}
+.JobApplicationFormsection .erroMessage {
+  display: none;
+}
+.JobApplicationFormsection .formActions {
+  text-align: center;
+}
+.JobApplicationFormsection .normalBtn {
+  height: 40px;
+  width: 201px;
+  border-radius: 20px;
+  background-color: #f8ae00;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  border: 1px solid #f8ae00 !important;
+}
+.JobApplicationFormsection .normalBtn:hover {
+  color: #fff;
+  background: #f49626;
+  border: 1px solid #f8ae00 !important;
+}
+.JobApplicationFormsection .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.JobApplicationFormsection .dk-select-options {
+  border-color: #d1d1d1;
+}
+.JobApplicationFormsection .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.JobApplicationFormsection .dk-selected {
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.JobApplicationFormsection .dk-selected::placeholder {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.JobApplicationFormsection .dk-selected::after {
+  border-left: none;
+}
+.JobApplicationFormsection .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/dropdownicon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.JobApplicationFormsection h3 {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: 400;
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 55px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+.JobApplicationFormsection .applyingto {
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+.JobApplicationFormsection .backto {
+  color: #3e3e3e;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.JobApplicationFormsection .backto::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  width: 16px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/Back-ArrowCopy.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.JobApplicationFormsection .fileUpload {
+  overflow: hidden;
+  position: relative;
+}
+.JobApplicationFormsection .fileUpload:after {
+  content: "";
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  right: 0;
+  top: 8px;
+  bottom: 0;
+  background-image: url(../images/Upload.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0 15px;
+  z-index: 1;
+  line-height: 30px;
+}
+.JobApplicationFormsection .fileUpload input {
+  font-size: 15px;
+  position: absolute;
+  height: 45px;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.JobApplicationFormsection .uploadValue {
+  color: #000;
+  display: block;
+  left: 15px;
+  opacity: 1;
+  position: absolute;
+  z-index: 50;
+  color: #525252;
+  font-size: 13px;
+  height: 30px;
+  line-height: 30px;
+  top: 5px;
+}
+.JobApplicationFormsection .fileUpload {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  height: 45px;
+}
+.JobApplicationFormsection .uploadnote {
+  margin-top: 8px;
+  color: #6c6c6c;
+  font-family: "Museo Sans 500";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+.JobApplicationFormsection .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #d1d1d1;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.JobApplicationFormsection .formActions {
+  display: flex;
+  flex-direction: revert;
+  justify-content: flex-end;
+}
+
+.JobApplicationForm {
+  position: relative;
+}
+
+.ContactUsPage-banner {
+  width: 100%;
+  position: relative;
+  background-image: url(../images/ContactusBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.1052631579vw;
+  max-height: 696px;
+  background-color: rgba(0, 0, 0, 0.368627451);
+  background-blend-mode: overlay;
+}
+.ContactUsPage-banner .content-holder {
+  position: absolute;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
+.ContactUsPage-banner .content-holder p {
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.ContactUsPage-banner .content-holder h1 {
+  font-family: "MrsEavesXLSerifOT";
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.ContactUsPage-banner .content-holder h1 {
+  font-size: 30px;
+}
+@media screen and (min-width: 320px) {
+  .ContactUsPage-banner .content-holder h1 {
+    font-size: calc(30px + 70 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ContactUsPage-banner .content-holder h1 {
+    font-size: 100px;
+  }
+}
+.ContactUsPage-banner .content-holder .text {
+  font-family: "Museo Sans 500";
+  color: #fff;
+}
+.ContactUsPage-banner .content-holder .text {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .ContactUsPage-banner .content-holder .text {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ContactUsPage-banner .content-holder .text {
+    font-size: 18px;
+  }
+}
+.ContactUsPage-banner .content-holder .text {
+  line-height: 20px;
+}
+@media screen and (min-width: 320px) {
+  .ContactUsPage-banner .content-holder .text {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 1580));
+  }
+}
+@media screen and (min-width: 1900px) {
+  .ContactUsPage-banner .content-holder .text {
+    line-height: 30px;
+  }
+}
+
+.section2ContactUs {
+  margin-top: 80px;
+  margin-bottom: 76px;
+}
+.section2ContactUs .listingItemLI {
+  margin-bottom: 24px;
+}
+.section2ContactUs .listingItemLI .listingItem {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos {
+  padding: 30px;
+  padding-bottom: 40px;
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .location {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 27px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .location::before {
+  content: "";
+  background-image: url(../images/Location-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 19px;
+  left: 0;
+  top: 0px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .openingtime {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 27px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .openingtime::before {
+  content: "";
+  background-image: url(../images/OpeningTimes-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 19px;
+  left: 0;
+  top: 0;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .phone {
+  margin-bottom: 30px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .phone a {
+  position: relative;
+  padding-left: 27px;
+  color: #333333;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .phone a::before {
+  content: "";
+  background-image: url(../images/PhoneNumber-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 19px;
+  left: 0;
+  top: 0;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .email a {
+  position: relative;
+  padding-left: 27px;
+  color: #333333;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .email a::before {
+  content: "";
+  background-image: url(../images/Mailicon-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 13px;
+  left: 0;
+  top: 5px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingInfos .listingDetails {
+  margin-bottom: 30px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingTitle {
+  opacity: 0.9;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+.section2ContactUs .listingItemLI .listingItem .listingImage {
+  width: 100%;
+}
+.section2ContactUs .listingItemLI .listingItem .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contactussection {
+  padding: 100px;
+  background-color: #f8f8f8;
+}
+.contactussection .contactusform .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.contactussection .contactusform .dk-select-options {
+  border-color: #d1d1d1;
+}
+.contactussection .contactusform .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.contactussection .contactusform .dk-selected {
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.contactussection .contactusform .dk-selected::placeholder {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.contactussection .contactusform .dk-selected::after {
+  border-left: none;
+}
+.contactussection .contactusform .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/dropdownicon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contactussection .contactusform textarea {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #d1d1d1 !important;
+  background-color: #ffffff;
+}
+.contactussection .contactusform textarea::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+.contactussection .contactusform label {
+  position: relative;
+  display: block;
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.contactussection .contactusform label span {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  color: #f8ae00;
+  width: 10px;
+  height: 10px;
+}
+.contactussection .contactusform input {
+  border: 1px solid #d1d1d1 !important;
+  background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.contactussection .contactusform input::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 14px;
+}
+.contactussection .contactusform select {
+  margin-bottom: 30px;
+}
+.contactussection .contactusform select option {
+  margin-top: 14px;
+}
+.contactussection .contactusform .erroMessage {
+  display: none;
+}
+.contactussection .contactusform .formActions {
+  text-align: center;
+}
+.contactussection .contactusform .normalBtn {
+  height: 40px;
+  width: 201px;
+  border-radius: 20px;
+  background-color: #f8ae00;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+}
+.contactussection .contactusform .normalBtn:hover {
+  color: #fff;
+  background: #f49626;
+  border: 1px solid #f8ae00;
+}
+.contactussection .contactusform h3 {
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 50px;
+}
+.contactussection .contactusform .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #d1d1d1;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.contactussection .contactusform .formActions {
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
+}
+
+.preloader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  display: none;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.preloader-jobappform {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loaderjobappform {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loaderjobappform:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+.loaderjobappform:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f8ae00;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.newsdetails .date {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+.newsdetails .backtonews {
+  margin-bottom: 80px;
+}
+.newsdetails .backtonews a {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  position: relative;
+  padding-left: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.newsdetails .backtonews a::before {
+  content: "";
+  background-image: url(/images/Backicon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 17px;
+  width: 11px;
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.newsdetails .blockTitle {
+  margin-bottom: 30px;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: 49px;
+  color: #693835;
+  text-align: left;
+}
+.newsdetails .mainphoto {
+  margin-bottom: 20px;
+}
+.newsdetails .secondaryphoto {
+  margin-bottom: 60px;
+}
+.newsdetails .maintext {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.newsdetails .separator {
+  height: 1px;
+  width: 100%;
+  transform: scaleY(-1);
+  background-color: #d4d4d4;
+  margin-bottom: 60px;
+}
+.newsdetails .nextandprevious {
+  margin-bottom: 100px;
+  align-items: center;
+}
+.newsdetails .nextandprevious .navtitle {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+.newsdetails .nextandprevious img {
+  width: 50px;
+  height: 50px;
+}
+.newsdetails .nextandprevious .col-md-5:nth-child(3) {
+  text-align: right;
+  padding: 0;
+}
+.newsdetails .nextandprevious .prevblog {
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+  width: 200px;
+}
+.newsdetails .nextandprevious .nextblog {
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  width: 200px;
+}
+.newsdetails .sidesection .othernews {
+  background-color: #f8f8f8;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.newsdetails .sidesection .othernews .listingItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.newsdetails .sidesection .othernews .listingItem .listingTitle {
+  margin-left: 15px;
+}
+.newsdetails .sidesection .othernews .listingItem:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  height: 1px;
+  width: 324px;
+  background-color: #d8d8d8;
+}
+.newsdetails .sidesection h6 {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.newsdetails .sidesection .shareontitle {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+.newsdetails .sidesection .shareicons li {
+  display: inline-block;
+}
+
+.section2shoponline {
+  margin-top: 80px;
+  padding-bottom: 100px;
+}
+.section2shoponline .ShopOnlineStoreSelect {
+  max-width: 384px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+.section2shoponline .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.section2shoponline .dk-select-options {
+  border-color: #d1d1d1;
+}
+.section2shoponline .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.section2shoponline .dk-selected {
+  height: 50px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 33.5px;
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-left: 14px;
+  position: relative;
+  text-transform: uppercase;
+}
+.section2shoponline .dk-selected::after {
+  border: none;
+}
+.section2shoponline .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 14px;
+  height: 9px;
+  transform: translateY(-50%);
+  background-image: url(../images/Dropdownarrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section2shoponline .blockTitle {
+  font-size: 55px;
+  letter-spacing: 0;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+.section2shoponline .form-intro {
+  margin-bottom: 40px;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  width: 66.6%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section2shoponline .orderfood {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-bottom: 60px;
+}
+.section2shoponline .orderfood .row {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section2shoponline .orderfood .col-md-6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section2shoponline .orderfood .innerleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos {
+  padding: 40px;
+  padding-left: 86px;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .ItemTitle {
+  opacity: 0.9;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .ItemDetails {
+  opacity: 0.9;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 42px;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .Partners {
+  margin-bottom: 50px;
+  width: 80%;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .Partners ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .Partners ul li {
+  margin-right: 34px;
+  filter: grayscale(100%);
+  transition: 0.1 ease-in-out;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .Partners ul li:hover {
+  filter: grayscale(0);
+  transition: 0.1s ease-in-out;
+}
+.section2shoponline .orderfood .innerright .orderfoodinfos .Partners ul img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.section2shoponline .shopgroceries {
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+.section2shoponline .shopgroceries .row {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section2shoponline .shopgroceries .col-md-6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos {
+  padding: 40px;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .ItemTitle {
+  opacity: 0.9;
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .ItemDetails {
+  opacity: 0.9;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 42px;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .Partners {
+  margin-bottom: 50px;
+  width: 80%;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .Partners ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .Partners ul li {
+  margin-right: 34px;
+  filter: grayscale(100%);
+  transition: 0.1 ease-in-out;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .Partners ul li:hover {
+  filter: grayscale(0);
+  transition: 0.1s ease-in-out;
+}
+.section2shoponline .shopgroceries .innerleft .shopgroceriesInfos .Partners ul img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.section2shoponline .shopgroceries .innerright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.classeseventsdetails .backtoclasses {
+  margin-bottom: 80px;
+}
+.classeseventsdetails .backtoclasses a {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  position: relative;
+  padding-left: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.classeseventsdetails .backtoclasses a::before {
+  content: "";
+  background-image: url(/images/Backicon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 17px;
+  width: 11px;
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.classeseventsdetails .location {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.classeseventsdetails .location::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 17px;
+  width: 15px;
+  background-image: url(../images/Locationiconnew.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 0;
+}
+.classeseventsdetails .blockTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: 49px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.classeseventsdetails .classprice {
+  color: #333333;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.classeseventsdetails .seatsleft {
+  height: 27px;
+  width: 129px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  background-color: #c82222;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.classeseventsdetails .mainphoto {
+  margin-bottom: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+.classeseventsdetails .maintext {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 212px;
+}
+.classeseventsdetails .disclaimer {
+  background-color: #f8f8f8;
+  padding: 30px;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.classeseventsdetails .sidesection .availabledates {
+  border: 1px solid #e2e2e2;
+  border-top: 3px solid #f8ae00;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.classeseventsdetails .sidesection .availabledates .blockTitle {
+  color: #303030;
+  font-size: 28px;
+  line-height: 31px;
+}
+.classeseventsdetails .sidesection .availabledates .text {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+.classeseventsdetails .sidesection .interestedinthisclass {
+  width: 100%;
+  padding: 33px 47px;
+  padding-bottom: 40px;
+  background-image: url(../images/CookingClasses.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4784313725);
+  background-blend-mode: darken;
+  margin-bottom: 30px;
+}
+.classeseventsdetails .sidesection .interestedinthisclass .blockTitle {
+  color: #ffffff;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  text-align: center;
+}
+.classeseventsdetails .sidesection .interestedinthisclass .btn a {
+  width: 100%;
+}
+.classeseventsdetails .sidesection .wantagift {
+  border: 1px solid #e2e2e2;
+  border-top: 3px solid #f8ae00;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 33px 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.classeseventsdetails .sidesection .wantagift .blockTitle {
+  color: #303030;
+  font-size: 28px;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.classeseventsdetails .sidesection .wantagift .whitebtn {
+  text-align: center;
+}
+.classeseventsdetails .sidesection .wantagift .whitebtn a {
+  border: 1px solid #f8ae00;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  width: 100%;
+  padding: 12px 65px;
+}
+.classeseventsdetails .sidesection .wantagift .whitebtn a:hover {
+  color: #fff;
+  background-color: #f8ae00;
+  transition: 0.2s ease-in-out;
+}
+.classeseventsdetails .sidesection .shareontitle {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.classeseventsdetails .sidesection .shareicons {
+  margin-bottom: 50px;
+}
+.classeseventsdetails .sidesection .shareicons li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.classeseventsdetails .sidesection .monthlyschedule {
+  border: 1px solid #e2e2e2;
+  background-color: #ffffff;
+  width: 100%;
+  border-top: 3px solid #f8ae00;
+  margin-bottom: 50px;
+}
+.classeseventsdetails .sidesection .monthlyschedule .listingImage {
+  width: 100%;
+}
+.classeseventsdetails .sidesection .monthlyschedule .listingImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.classeseventsdetails .sidesection .monthlyschedule .listingInfos {
+  padding: 20px 30px;
+  padding-bottom: 30px;
+}
+.classeseventsdetails .sidesection .monthlyschedule .listingTitle {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+.classeseventsdetails .sidesection .monthlyschedule .listingDetails {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.classeseventsdetails .sidesection .otherclasses {
+  background-color: #f8f8f8;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.classeseventsdetails .sidesection .otherclasses h6 {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.classeseventsdetails .sidesection .otherclasses .listingItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.classeseventsdetails .sidesection .otherclasses .listingItem .listingTitle {
+  margin-left: 15px;
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+.classeseventsdetails .sidesection .otherclasses .listingItem:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 12px;
+  height: 1px;
+  width: 324px;
+  background-color: #d8d8d8;
+}
+.classeseventsdetails .sidesection .otherclasses .listingItem .listingLocation {
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  padding-left: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+.classeseventsdetails .sidesection .otherclasses .listingItem .listingLocation::before {
+  content: "";
+  background-image: url(../images/Locationiconnew.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 15px;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+
+.reminderpopup {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  padding: 30px;
+}
+.reminderpopup .col-md-3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.reminderpopup img {
+  width: 100%;
+}
+.reminderpopup .innerright .listingTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 26px;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-bottom: 21px;
+}
+.reminderpopup .innerright .listingdate {
+  display: inline-block;
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-bottom: 34px;
+  margin-right: 31px;
+  padding-left: 20px;
+  position: relative;
+}
+.reminderpopup .innerright .listingdate::before {
+  content: "";
+  background-image: url(/images/CalendarIconReminder.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 15px;
+  height: 17px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.reminderpopup .innerright .listinglocation {
+  display: inline-block;
+  color: #333333;
+  font-family: "Museo Sans 300";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+.reminderpopup .innerright .listinglocation::before {
+  content: "";
+  background-image: url(/images/Locationiconnew.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 15px;
+  height: 17px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.reminderpopup::before {
+  content: "";
+  background-image: url(/images/close.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 35px;
+  height: 35px;
+  right: -15px;
+  top: -17px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.bookingpopupoverlay {
+  display: block;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 11;
+}
+
+.bookingpopup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  display: block;
+  z-index: 20;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bookingpopup .section1 {
+  padding: 60px 39px 30px 39px;
+  background-color: #f8f8f8;
+}
+.bookingpopup .section1 .subtitle {
+  color: #303030;
+  font-family: "Museo Sans 700";
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.bookingpopup .section1 .blockTitle {
+  color: #693835;
+  font-size: 45px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.bookingpopup .section1 .location {
+  padding-left: 20px;
+  position: relative;
+  text-align: center;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.bookingpopup .section1 .location::before {
+  content: "";
+  background-image: url(../images/Locationiconnew.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 17px;
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.bookingpopup .section1 .price {
+  color: #333333;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 33px;
+  text-align: center;
+}
+.bookingpopup .section2 {
+  background-color: #fff;
+  margin-top: 30px;
+}
+.bookingpopup .section2 .bookingform .termsconditions {
+  color: #f8ae00;
+  font-family: "Museo Sans 500";
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 15px;
+  text-decoration: none;
+}
+.bookingpopup .section2 .bookingform .disclaimer {
+  color: #c82222;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 30px;
+}
+.bookingpopup .section2 .bookingform .dk-select {
+  border: none;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.bookingpopup .section2 .bookingform .dk-select-options {
+  border-color: #d1d1d1;
+}
+.bookingpopup .section2 .bookingform .dk-select-open-down {
+  border-color: #d1d1d1;
+}
+.bookingpopup .section2 .bookingform .dk-selected {
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.bookingpopup .section2 .bookingform .dk-selected::placeholder {
+  margin-top: 14px;
+  margin-left: 20px;
+}
+.bookingpopup .section2 .bookingform .dk-selected::after {
+  border-left: none;
+}
+.bookingpopup .section2 .bookingform .dk-selected::before {
+  border: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-image: url(../images/dropdownicon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bookingpopup .section2 .bookingform textarea {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #d1d1d1 !important;
+  background-color: #ffffff;
+}
+.bookingpopup .section2 .bookingform textarea::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 20px;
+  padding-top: 14px;
+}
+.bookingpopup .section2 .bookingform label {
+  position: relative;
+  display: block;
+  color: #303030;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  margin-bottom: 5px;
+}
+.bookingpopup .section2 .bookingform label span {
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 17px;
+  color: #f8ae00;
+  width: 10px;
+  height: 10px;
+}
+.bookingpopup .section2 .bookingform input {
+  border: 1px solid #d1d1d1 !important;
+  background-color: #ffffff;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+}
+.bookingpopup .section2 .bookingform input::placeholder {
+  color: #606060;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 17px;
+  padding-left: 14px;
+}
+.bookingpopup .section2 .bookingform select {
+  margin-bottom: 30px;
+}
+.bookingpopup .section2 .bookingform select option {
+  margin-top: 14px;
+}
+.bookingpopup .section2 .bookingform .erroMessage {
+  display: none;
+}
+.bookingpopup .section2 .bookingform .formActions {
+  text-align: center;
+}
+.bookingpopup .section2 .bookingform .normalBtn {
+  height: 40px;
+  width: 384px;
+  border-radius: 20px;
+  background-color: #f8ae00;
+  color: #ffffff;
+  font-family: "Museo Sans 500";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bookingpopup .section2 .bookingform .normalBtn:hover {
+  color: #fff;
+  background: #f49626;
+  border: 1px solid #f8ae00;
+}
+.bookingpopup .section2 .bookingform h3 {
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 50px;
+}
+.bookingpopup .section2 .bookingform .blockTitle {
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bookingpopup .section2 .bookingform .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #d1d1d1;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.bookingpopup .section2 .bookingform .formActions {
+  display: flex;
+  flex-direction: revert;
+  justify-content: center;
+}
+.bookingpopup .section2 .bookingform .stackedInput,
+.bookingpopup .section2 .bookingform ul.stackedInput li {
+  display: block;
+  margin-bottom: 16px;
+  line-height: 1.5em;
+}
+.bookingpopup .section2 .bookingform input[type=checkbox]:not(old),
+.bookingpopup .section2 .bookingform input[type=radio]:not(old) {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+  position: absolute;
+}
+.bookingpopup .section2 .bookingform input[type=checkbox]:not(old) ~ label,
+.bookingpopup .section2 .bookingform input[type=radio]:not(old) ~ label {
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
+}
+.bookingpopup .section2 .bookingform input[type=checkbox]:not(old):checked ~ label::before,
+.bookingpopup .section2 .bookingform input[type=radio]:not(old):checked ~ label::before {
+  background-color: #f8ae00;
+}
+.bookingpopup .section2 .bookingform input[type=checkbox]:not(old) + label:before,
+.bookingpopup .section2 .bookingform input[type=radio]:not(old) + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  background-color: #ffffff;
+  background-image: url(../images/Check.svg);
+  background-position: center;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.bookingpopup .section2 .bookingform .cancel {
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.bookingpopup .section3 {
+  margin: 0px 50px 50px 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.bookingpopup .section3 .title {
+  margin: 0 auto 10px auto;
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+}
+.bookingpopup .section3 .subtitle {
+  margin: 0 auto 25px auto;
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  text-align: center;
+}
+.bookingpopup .section3 .contactusbtn a {
+  padding: 12px 40px 12px 40px;
+  border: 1px solid #f8ae00;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f8ae00;
+  font-family: "Museo Sans 700";
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 17px;
+  text-align: center;
+}
+.bookingpopup .section3 .contactusbtn a:hover {
+  color: #fff;
+  background-color: #f8ae00;
+}
+.bookingpopup .scrollable {
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-face-color: #f49626; /* Firefox 63 compatibility */
+  scrollbar-track-color: #f49626; /* Firefox 63 compatibility */
+  scrollbar-color: #f8ae00 #f1f1f1;
+  scrollbar-width: thin;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.bookingpopup .scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+.bookingpopup .scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.bookingpopup .scrollable::-webkit-scrollbar-thumb {
+  background: #f8ae00;
+}
+.bookingpopup .scrollable::-webkit-scrollbar-thumb:hover {
+  background: #f49626;
+}
+.bookingpopup .closebtn {
+  content: "";
+  background-image: url("../images/close.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 97.6%;
+  top: -15px;
+}
+
+.bookconfirm {
+  text-align: center;
+}
+.bookconfirm .blockTitle {
+  color: #303030;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 31px;
+  text-align: center;
+}
+.bookconfirm .confirmIcon {
+  margin-bottom: 30px;
+}
+.bookconfirm .blockTitle {
+  color: #303030;
+  font-size: 45px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bookconfirm .confirmsubtitle {
+  color: #3e3e3e;
+  font-family: "Museo Sans 300";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bookconfirm .refnumber {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.bookconfirm .classDetails {
+  background-color: #f8f8f8;
+  padding: 50px 78px 60px 78px;
+}
+.bookconfirm .classDetails .minititle {
+  color: #303030;
+  font-family: "Museo Sans 500";
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bookconfirm .classDetails .classImage {
+  margin-bottom: 20px;
+}
+.bookconfirm .classDetails .classImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bookconfirm .classDetails .classTitle {
+  color: #693835;
+  font-family: "MrsEavesXLSerifOT";
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: 49px;
+  text-align: center;
+}
+.bookconfirm .classDetails .classDate {
+  display: inline-block;
+  margin-right: 40px;
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: relative;
+  padding-left: 24px;
+}
+.bookconfirm .classDetails .classDate::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 3px;
+  background-image: url(../images/CalendarIconReminder.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 20px;
+}
+.bookconfirm .classDetails .classLocation {
+  display: inline-block;
+  color: #333333;
+  font-family: "Museo Sans 500";
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: relative;
+  padding-left: 24px;
+}
+.bookconfirm .classDetails .classLocation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 3px;
+  background-image: url(../images/Locationiconnew.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=eataly.css.map */
